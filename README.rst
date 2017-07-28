@@ -7,7 +7,9 @@ python-jambel
 
 Interface to jambit's project traffic lights.
 
-A simple example::
+A simple example:
+
+.. code-block:: python
 
     import jambel
     light = jambel.Jambel('ampel3.dev.jambit.com')
@@ -15,7 +17,9 @@ A simple example::
     light.yellow.blink()
     light.red.flash()
 
-It is also possible to query the jambel's status::
+It is also possible to query the jambel's status:
+
+.. code-block:: python
 
     status = light.status()
     if stats[jambel.GREEN] == jambel.BLINK:
